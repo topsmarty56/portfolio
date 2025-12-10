@@ -29,7 +29,7 @@ const HeroSection = ({ heroData }) => {
                     <HeroLeftContainer>
                         <Title>Hi, I am <br /> {heroData?.name}</Title>
                         <TextLoop>
-                            I am a
+                            {/* I am a */}
                             <Span>
                                 <Typewriter
                                     options={{
