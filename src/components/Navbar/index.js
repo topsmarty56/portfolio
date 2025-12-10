@@ -86,9 +86,9 @@ const Navbar = ({ navbarData, sections }) => {
             </li>
           ))}
         </NavItems>
-        <ButtonContainer>
+        {/* <ButtonContainer>
           <GitHubButton href={navbarData?.github} target="_blank">Github Profile</GitHubButton>
-        </ButtonContainer>
+        </ButtonContainer> */}
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
