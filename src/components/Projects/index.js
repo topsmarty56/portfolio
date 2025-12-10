@@ -65,6 +65,7 @@ const Projects = ({
   }, [toggle, projectsData]);
   
 
+  console.log(filteredProjects.length);
   return (
     <Container id="projects">
       <Wrapper>
@@ -75,7 +76,7 @@ const Projects = ({
           </Desc>
         )}
         {projectFilters && (
-          <ToggleButtonGroup>
+          <ToggleButtonGroup sx={{ overflowX: 'auto' }} aria-label="Project category filters">
             {projectFilters.map(category => (
               <React.Fragment key={category}>
                 <ToggleButton
@@ -100,7 +101,7 @@ const Projects = ({
               setOpenModal={setOpenModal}
             />
           ))}
-          {AllCard ? <ViewAllCard /> : null}
+          {/* {AllCard ? <ViewAllCard /> : null} */}
         </CardContainer>
       </Wrapper>
     </Container>

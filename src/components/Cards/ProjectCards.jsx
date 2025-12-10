@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaGithub } from "react-icons/fa"; 
-import { RiHeartAddFill } from "react-icons/ri";
+import { RiArrowRightCircleFill } from "react-icons/ri";
 
-const githubsponslink = 'https://github.com/sponsors/sibisiddharth8';
+// const githubsponslink = 'https://github.com/sponsors/sibisiddharth8';
 
 const Button = styled.button`
     display: none;
@@ -186,7 +186,8 @@ const ProjectCards = ({ project, setOpenModal }) => {
 
     return (
         <Card
-            onClick={() => setOpenModal({ state: true, project })}
+            // onClick={() => setOpenModal({ state: true, project })}
+            onClick={() => {}}
             aria-labelledby={`project-title-${project.id}`}
             role="button"
             tabIndex="0"
@@ -234,12 +235,12 @@ const ProjectCards = ({ project, setOpenModal }) => {
                     )}
 
                     <SocialMediaIcon 
-                        href={githubsponslink} 
+                        href={project.link} 
                         target="_blank" 
-                        aria-label="GitHub Sponsors page"
+                        aria-label="Live Demo"
                         onClick={handleIconClick}
                     >
-                        <RiHeartAddFill size={26} />
+                        <RiArrowRightCircleFill size={26} />
                     </SocialMediaIcon>
                 </CardIcons>
             </CardDataHolder>

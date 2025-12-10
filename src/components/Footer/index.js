@@ -149,7 +149,7 @@ const Footer = ({ footerData, links=[] }) => {
             </NavLink>
           ))}
         </Nav>
-        <SocialMediaIcons>
+        {/* <SocialMediaIcons>
           <SocialMediaIcon
             href={footerData?.github || '#'}
             target="_blank"
@@ -176,7 +176,7 @@ const Footer = ({ footerData, links=[] }) => {
               <GetAppIcon />
             </InstallIconWrapper>
           )}
-        </SocialMediaIcons>
+        </SocialMediaIcons> */}
         <Copyright>
           &copy; {new Date().getFullYear()} Nakamura Kenta. All rights reserved.
         </Copyright>

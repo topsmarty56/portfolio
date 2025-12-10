@@ -69,9 +69,9 @@ const App = () => {
               <Route path="/" element={
                 <Home firebaseData={firebaseData} openModal={openModal} setOpenModal={setOpenModal} />
               } />
-              <Route path="/AllProjects" element={
+              {/* <Route path="/AllProjects" element={
                 <AllProjects firebaseData={firebaseData} openModal={openModal} setOpenModal={setOpenModal} />
-              } />
+              } /> */}
               <Route path="/TermsandConditions" element={<TermsandConditions firebaseData={firebaseData}/>} />
               <Route path="*" element={<Home firebaseData={firebaseData} openModal={openModal} setOpenModal={setOpenModal} />} />
             </Routes>
